@@ -1,0 +1,14 @@
+numpy
+scipy
+pandas
+matplotlib
+geopandas
+rasterio
+shapely
+pyproj
+pyflwdir
+h3
+rioxarray
+rasterstats
+pyyaml
+requests

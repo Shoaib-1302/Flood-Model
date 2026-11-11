@@ -1,0 +1,22 @@
+# Conda is the most reliable way to get rasterio/geopandas on Windows/macOS.
+name: floodenv
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - geopandas
+  - rasterio
+  - shapely
+  - pyproj
+  - rioxarray
+  - rasterstats
+  - pyyaml
+  - requests
+  - jupyterlab
+  - pip
+  - pip:
+      - pyflwdir
+      - h3

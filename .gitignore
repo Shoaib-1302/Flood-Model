@@ -1,0 +1,13 @@
+# Large data is versioned by manifest/checksums (or DVC), not by git
+data/**/*
+!data/**/
+!data/**/.gitkeep
+models/**/*.nc
+models/**/*.tif
+outputs/**/*.tif
+floodenv/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+.env

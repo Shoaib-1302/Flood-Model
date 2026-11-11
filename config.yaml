@@ -1,0 +1,30 @@
+# ===== Single source of truth. Every script reads this file. =====
+
+# ---- AOI: EDIT THIS BLOCK ----
+aoi:
+  name: placeholder_utrecht
+  # Bounding box in EPSG:4326, order: [west, south, east, north] (lon/lat degrees)
+  bbox_4326: [5.07, 52.06, 5.15, 52.12]
+  buffer_m: 2000            # padding around the core AOI (applied in the UTM CRS)
+  country_iso3: NLD         # for administrative boundaries (3-letter ISO code)
+  admin_levels: [ADM0, ADM1, ADM2]
+
+crs:
+  storage: "EPSG:4326"
+  # "auto" picks the UTM zone from the AOI centroid. Or set explicitly, e.g. "EPSG:32631".
+  project: auto
+
+model:
+  dem_resolution_m: 30
+  return_periods_yr: [10, 25, 50, 100]
+  design_duration_h: 24
+  depth_tiers_m: [0.3, 0.5, 1.0]
+  h3_resolutions: [8, 9]
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  models: models
+  outputs: outputs
+  manifest: data_manifest.csv
+  checksums: data_checksums.csv

@@ -1,0 +1,13 @@
+# Project metadata (committed to git; keep current)
+project:
+  name: flood-model
+  title: Flood Risk and Inundation Modeling Pipeline
+  version: 0.1.0
+  description: >
+    Hydro-conditioned DEM processing, design storm frequency analysis (10/25/50/100 yr),
+    SCS-CN runoff, 2D hydrodynamic flood simulation, H3 hexagonal vulnerability scoring,
+    and an interactive risk dashboard.
+  team: Applied Geospatial Technologies (AGT) Analytics Team
+  start: 2026-10-29
+  deadline: 2026-11-20
+  tickets: [AGT-309, AGT-310, AGT-311, AGT-312, AGT-313, AGT-314, AGT-315, AGT-316]
