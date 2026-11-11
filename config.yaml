@@ -2,18 +2,17 @@
 
 # ---- AOI: EDIT THIS BLOCK ----
 aoi:
-  name: placeholder_utrecht
-  # Bounding box in EPSG:4326, order: [west, south, east, north] (lon/lat degrees)
-  bbox_4326: [5.07, 52.06, 5.15, 52.12]
-  buffer_m: 2000            # padding around the core AOI (applied in the UTM CRS)
-  country_iso3: NLD         # for administrative boundaries (3-letter ISO code)
+  name: netherlands
+  mode: admin                        # use the country outline as the AOI
+  bbox_4326: [3.2, 50.7, 7.3, 53.6]  # national envelope, used until the outline is downloaded
+  buffer_m: 0
+  country_iso3: NLD
   admin_levels: [ADM0, ADM1, ADM2]
 
 crs:
   storage: "EPSG:4326"
-  # "auto" picks the UTM zone from the AOI centroid. Or set explicitly, e.g. "EPSG:32631".
-  project: auto
-
+  project: "EPSG:28992"
+  
 model:
   dem_resolution_m: 30
   return_periods_yr: [10, 25, 50, 100]
